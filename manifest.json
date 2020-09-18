@@ -1,0 +1,16 @@
+{ 
+    "name": "UWFlow Links", 
+    "version": "1", 
+    "manifest_version": 2,
+    "description": "Add links to UWFlow on course descriptions", 
+    "browser_action": { 
+        "name": "uwflow link adder",
+        "icons": ["uwflowicon.png"]
+    }, 
+    "content_scripts": [ 
+        { 
+            "js": [ "jquery-3.5.1.min.js", "link.js" ],
+             "matches": [ "http://www.ucalendar.uwaterloo.ca/*", "https://www.ucalendar.uwaterloo.ca/*"]
+         }
+     ] 
+}   
